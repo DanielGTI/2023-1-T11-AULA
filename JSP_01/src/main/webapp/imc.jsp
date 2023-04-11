@@ -12,44 +12,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <body>
-        <div id="pag">
-            <div id="div_1">
-
-                
-                
-                    Peso: <input type="text" name="peso" maxlength="5"><br>
-                    Altura: <input type="type" name="altura" maxlength="5"><br>
-                    <input type="submit" name="enviar" value="Calcular IMC"    >
-                </form>
-            </div>
-            <div id="div_2">
-                <iframe name="resultado" width="300" height="300" frameborder="1"></iframe>
-            </div>
-        </div>    
-
-
-
-
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="text-center">
                         IMC - Índice de Massa Corporal
                     </h3>
-                    
-                    <div class="row">
-                        <div class="col-md-12">
-                            <dl>
-                                <dt>
-                                    Formula
-                                </dt>
-                                <dd>
-                                    IMC = peso / (altura * altura)
-                                </dd>
-                            </dl>
-                        </div>
-                    </div>
+                    <h5 class="text-center">Fórmula</h5><br> 
+                    <h5 class="text-center">IMC = peso / (altura * altura)</h5>
                     
                     <div class="row">
                         <div class="col-md-4">
@@ -57,37 +27,20 @@
                         <div class="col-md-4">
                             <form role="form" action="resposta.jsp" method="get" target="resultado">    
                                 <div class="form-group">
-
-                                    <label for="exampleInputEmail1">
-                                        Email address
+                                    <label for="examplePeso">
+                                        Peso:
                                     </label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1">
+                                    <input type="text" class="form-control" name="peso" maxlength="5"><br>
                                 </div>
                                 <div class="form-group">
 
-                                    <label for="exampleInputPassword1">
-                                        Password
+                                    <label for="exampleAltura">
+                                        Altura:
                                     </label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                    <input type="text" name="altura" class="form-control" maxlength="5"><br>
                                 </div>
-                                <div class="form-group">
-
-                                    <label for="exampleInputFile">
-                                        File input
-                                    </label>
-                                    <input type="file" class="form-control-file" id="exampleInputFile">
-                                    <p class="help-block">
-                                        Example block-level help text here.
-                                    </p>
-                                </div>
-                                <div class="checkbox">
-
-                                    <label>
-                                        <input type="checkbox"> Check me out
-                                    </label>
-                                </div> 
                                 <button type="submit" class="btn btn-primary">
-                                    Submit
+                                    Enviar
                                 </button>
                             </form>
                         </div>
@@ -96,19 +49,12 @@
                     </div>
                 </div>
             </div>
+            <div class="row">&nbsp</div>
             <div class="row">
                 <div class="col-md-4">
                 </div>
                 <div class="col-md-4">
-                    <h2>
-                        Heading
-                    </h2>
-                    <p>
-                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                    </p>
-                    <p>
-                        <a class="btn" href="#">View details »</a>
-                    </p>
+                    <iframe name="resultado" width="300" height="300" frameborder="1"></iframe>
                 </div>
                 <div class="col-md-4">
                 </div>

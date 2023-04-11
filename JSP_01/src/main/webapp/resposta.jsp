@@ -12,8 +12,13 @@
            
             peso_texto = request.getParameter("peso");
             altura_texto = request.getParameter("altura");
-            peso = Float.parseFloat(peso_texto);
-            altura = Float.parseFloat(altura_texto);
+            
+            
+            if(!peso_texto.equals(""))
+                peso = Float.parseFloat(peso_texto);
+                
+            if(!altura_texto.equals(""))
+                altura = Float.parseFloat(altura_texto);
 
             imc = peso / (altura * altura);
             
