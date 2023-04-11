@@ -37,13 +37,14 @@
 
             
             public int efetuar_tabuada(int y, int x){
+                
                 return (y * x);
             }
-            /*
+            
             public void efetuar_soma(){
-                out.println("Efetuar Soma\n");
+                //out.println("Efetuar Soma\n");
             }
-            */
+            
         %>    
         
                      
