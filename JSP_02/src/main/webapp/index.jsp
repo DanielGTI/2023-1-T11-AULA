@@ -1,3 +1,4 @@
+<%@page import="extrasHTML.Unidades"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -9,12 +10,12 @@
         <h2>Cadastro de produtos</h2>
         
         <div id="formulario" >
-            <form action="action">
+            <form name="frmDados" action="jsp_Dados.jsp" method="post">
                 <pre>
                 ----  Cadastrar ítens de produtos ----                      
-                Código:         <input type="text" name="codigo" >
+                Código:         <input type="text" name="codigos" >
                 Descrição:      <input type="text" name="descricao">
-                Unidade:        <input type="text" name="unidade">
+                Unidade:        <%=new Unidades().getUnidades()%>
                 Saldo:          <input type="text" name="saldo">
                 Valor Unitário: <input type="text" name="valorUnitario">
                 Observações:    <input type="text" name="obs">
