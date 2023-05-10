@@ -12,7 +12,7 @@
                 
                 <%@include file="sidebar.jsp" %>
                 <%@include file="topmenu.jsp" %>
-                <%@include file="content.jsp" %>
+                <%@include file="view/view_cliente.jsp" %>
                 <%@include file="footer.jsp" %>
             </div>
         </div>
